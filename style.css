@@ -1,0 +1,33 @@
+.mainDiv{
+    background: #2f2fa2;
+    display: flex;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+.mainDiv h1 {
+   
+    text-transform: uppercase;
+    color: black;
+    margin-top: -50px;
+
+}
+
+.upperdiv{
+    background: #2f2fa2;
+    text-align: center;
+    
+    color: white;
+    
+}
+
+
+/* counter */
+
+
+
+
+
