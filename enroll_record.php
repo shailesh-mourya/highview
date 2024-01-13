@@ -18,6 +18,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
       html,
       body,
@@ -89,7 +90,20 @@
                             <td  class='text-wrap'>{$rows['address']}</td>
                             <td>{$rows['mobile_no1']}</td>
                             <td>{$rows['mobile_no2']}</td>
-                          </tr>";
+                          <td><a
+                          name=''
+                          id=''
+                          class='btn btn-outline-secondary btn-sm  text-center'
+                          href='viewcard.php?id={$rows['enroll_no']}'
+                          role='button'
+                          ><i class='bi bi-eye'></i></a>
+                          <a
+                          name=''
+                          id=''
+                          class='btn btn-outline-danger btn-sm m-1  '
+                          href='download.php?id={$rows['enroll_no']}'
+                          role='button'
+                          ><i class='bi bi-trash3'></i></a></td> </tr>";
                           
                         }
 
