@@ -70,7 +70,7 @@ echo "<META HTTP-EQUIV='Refresh' CONTENT='0; URL=http://localhost/highview/index
       >
         <div class="container">
           <a class="navbar-brand" href="#" style="color: #f64c72"
-            >Sadhana Classes</a
+            > <img src="logo/sc_bgless.png" class="img-fluid rounded mx-2 " height="35px" width="35px" alt="">Sadhana Classes</a
           >
           <button
             class="navbar-toggler d-lg-none"
@@ -135,13 +135,14 @@ echo "<META HTTP-EQUIV='Refresh' CONTENT='0; URL=http://localhost/highview/index
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12 p-0">
-            <div class="mainDiv">
+            <div class="mainDiv my-4">
               <p class="pt-5 h3" style="text-align: center">
                 Move Towards Knowledge
               </p>
               <h5 class="h5" style="text-align: center">
                 Welcome to sadhana classes
               </h5>
+              <img src="logo/sc_bgless.png" class="img-fluid rounded mx-2 " height="200px" width="200px" alt="">
               <?php 
                 
                 if (isset($_SESSION["user"])) {

@@ -51,8 +51,8 @@ if (!isset($admin_name)) {
     <nav  class="navbar navbar-expand-sm fixed-top mb-2"
     style="background-color: #2f2fa2" >
       <div class="container " >
-        <a class="navbar-brand text-center" href="#">
-          <img src="image/logo.png" class="img-fluid rounded-top " height="30px" width="30px" alt="">
+        <a class="navbar-brand text-center" href="#" style="color: #f64c72">
+          <img src="logo/sc_bgless.png" class="img-fluid rounded-top " height="30px" width="30px" alt="">
           Sadhana Classes
         </a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
@@ -78,7 +78,7 @@ if (!isset($admin_name)) {
               <a class="nav-link" href="#">Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="message.html">Mail</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
@@ -109,6 +109,7 @@ if (!isset($admin_name)) {
         <h5 class="h5" style="text-align: center">
           Welcome to sadhana classes
         </h5>
+        <img src="logo/sc_bgless.png" class="img-fluid rounded mx-2 " height="200px" width="200px" alt="">
        
         <h5 class="h5 text-uppercase" style="text-align: center">Admin: <?php echo $_SESSION['admin_name'];  ?> </h5>
        
@@ -178,27 +179,27 @@ if (!isset($admin_name)) {
   <div class="container">
     <h1 class="text-center">Counts</h1>
     <div class="row">
-      <div class="col-md-4 border border-2" onclick="enrolledStudents()">
-        <div class="card text-center">
-          <div class="card-body bg-primary" >
+      <div class="col-md-4" onclick="enrolledStudents()">
+        <div class="card border-0 text-center bg-danger">
+          <div class="card-body rounded-circle bg-primary " >
             <h5 class="card-title">Total Enrolled Students</h5>
-            <p class="card-text display-1"><?php echo $total_enroll; ?></p>
+            <p class="card-text display-4"><?php echo $total_enroll; ?></p>
           </div>
         </div>
       </div>
       <div class="col-md-4" onclick="registeredUsers()">
-        <div class="card text-center">
-          <div class="card-body">
+        <div class="card border-0 text-center bg-danger">
+          <div class="card-body rounded-circle bg-success ">
             <h5 class="card-title">Total Registered Users</h5>
-            <p class="card-text display-1"><?php echo $total_register; ?></p>
+            <p class="card-text display-4"><?php echo $total_register; ?></p>
           </div>
         </div>
       </div>
       <div class="col-md-4" onclick="teacherRecord()">
-        <div class="card text-center">
-          <div class="card-body">
+        <div class="card border-0 text-center bg-danger">
+          <div class="card-body rounded-circle bg-warning ">
             <h5 class="card-title">Total Number of Teachers</h5>
-            <p class="card-text display-1"><?php echo $total_teacher; ?></p>
+            <p class="card-text display-4"><?php echo $total_teacher; ?></p>
           </div>
         </div>
       </div>

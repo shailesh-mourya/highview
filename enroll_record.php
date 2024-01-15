@@ -69,7 +69,6 @@
                             <th scope="col">Name</th>
                             <th scope="col">Years</th>
                             <th scope="col">Standard</th>
-                            <th scope="col">Address</th>
                             <th scope="col">Mobile no1.</th>
                             <th scope="col">Mobile no2.</th>
                           </tr>
@@ -87,7 +86,6 @@
                             <td>{$rows['first_name']} {$rows['last_name']}</td>
                             <td>{$rows['academic_year']}</td>
                             <td>{$rows['standard']}</td>
-                            <td  class='text-wrap'>{$rows['address']}</td>
                             <td>{$rows['mobile_no1']}</td>
                             <td>{$rows['mobile_no2']}</td>
                           <td><a
@@ -101,7 +99,7 @@
                           name=''
                           id=''
                           class='btn btn-outline-danger btn-sm m-1  '
-                          href='download.php?id={$rows['enroll_no']}'
+                          href='data_operation.php?id={$rows['enroll_no']}'
                           role='button'
                           ><i class='bi bi-trash3'></i></a></td> </tr>";
                           
