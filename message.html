@@ -21,7 +21,7 @@
         <section class="m-2 mt-5 mb-5">
             <div class="container  rounded-3" style="background-color: white;">
 
-                <form action="notification_mail.php" method="post">
+                <form action="notification_mail.php" method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-lg-12 text-center my-3">
                             <h3 class="h3">Message</h3>
@@ -56,6 +56,19 @@
                                     name="s_body"></textarea>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 my-2 px-3">
+                            <center>
+                                <div class="mb-3">
+                                    <input type="file" class="form-control" name="file" id="file"
+                                        aria-describedby="helpId" placeholder="" />
+                                </div>
+
+                            </center>
+
+                        </div>
+
                     </div>
                     <div class="row">
                         <div class="col-lg-12 my-2 px-3">

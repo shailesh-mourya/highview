@@ -86,7 +86,7 @@ if (!isset($admin_name)) {
               </a>
             </li>
             <li class="nav-item ms-5">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="updateadmino.php">
                 <i class="bi bi-person-circle"></i>
               </a>
             </li>

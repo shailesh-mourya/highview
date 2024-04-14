@@ -32,7 +32,10 @@ try {
     $mail->addReplyTo($email, 'Sadhana Classes');
 
     //Attachments
-   // $mail->addAttachment('Chrysanthemum.jpg', 'Chrysanthemum.jpg');
+
+    if (isset($_FILES['file']) && $_FILES['file']['error'] === UPLOAD_ERR_OK) {
+        $mail->addAttachment($_FILES['file']['tmp_name'], $_FILES['file']['name']);
+    }
 
 
     // Email content

@@ -12,6 +12,7 @@ if (mysqli_num_rows($result)>0) {
     $rows=mysqli_fetch_assoc($result);
     $_SESSION["admin_name"]="{$rows['name']}";
     $_SESSION["user"]="{$rows['name']}";
+    $_SESSION["admino_mobile"]="{$rows['mobile']}";
     header('location:dashboard.php');
     
 }
